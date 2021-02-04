@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<script>
+var x=0;
+function pic(){
+    x++
+    var cont = x % 4;
+    if(cont==1){
+    document.getElementById("image").src ="Seizoenen\\lente.jpg";
+    document.getElementById("image1").src="Seizoenen\\lam.jpg";
+   }else if(cont==2){
+    document.getElementById("image").src ="Seizoenen\\winter.jpg";
+    document.getElementById("image1").src=""
+    } else if(cont==3) {
+    document.getElementById("image").src ="Seizoenen\\herfst.jpg";   
+    } else {
+    document.getElementById("image").src ="Seizoenen\\zomer.jpg";
+    }
+    
+}
+
+
+</script>
+<body>
+
+<img id="image" src="Seizoenen\\zomer.jpg" style="width:250px;" onclick="pic()">  
+<img id="image1" style="width:250px;">    
+</body>
+</html>
