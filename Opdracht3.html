@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<script>
+function f(){
+    var input = document.getElementById("input").value;
+    var letter = document.getElementById("letter").value;
+    var count = 0;
+    for( x=0 ; x<input.length ; x++ ){
+        if(input[x].includes(letter)){
+        count = count +1 ;
+        }else{
+            count = count
+        }
+    } 
+    if(count>0){
+         alert("De letter " +letter+" zit er  "+count+ " keer in")
+    } 
+}   
+</script>
+
+<body>
+<input type=text id=input> <br>
+<input type=text id=letter> <br>
+<input type="button" onclick=f() value="KNOP" >
+
+
+</body>
+</html>
