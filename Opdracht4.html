@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<script>
+  
+function A(){
+    var textnode = document.createTextNode(" U heeft op knop A gedrukt"+ "\n");
+    var enter = document.createElement("br");
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+}
+function B(){
+    var textnode = document.createTextNode("U heeft op knop B gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+}
+function C(){
+    var textnode = document.createTextNode("U heeft op knop C gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+}
+function D(){
+    var textnode = document.createTextNode("U heeft op knop D gedrukt");
+    var enter = document.createElement("br")
+    document.getElementById("div").appendChild(textnode);
+    document.getElementById("div").appendChild(enter);
+}
+</script>
+
+<body>
+ <input type="button" value="A" onclick="A()">   
+ <input type="button" value="B" onclick="B()"> 
+ <input type="button" value="C" onclick="C()"> 
+ <input type="button" value="D" onclick="D()"> 
+ <div id=div   >
+</body>
+</html>
