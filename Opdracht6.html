@@ -4,17 +4,39 @@
    
 </head>
 <script>
-
-
+var x=0;
+var y=0;
 function pic(){
-    document.getElementById("image").src ="C:\Users\Beheerder\Documents\Banen\WorkingTalent\Programmeren\Seizoenen\zomer.jpg";
-  
+    x++
+    var cont = x % 4;
+    if(cont==1){
+    document.getElementById("image").src ="Seizoenen\\lente.jpg";
+   
+    }else if(cont==2){
+    y++
+    document.getElementById("image").src ="Seizoenen\\winter.jpg";
+    } else if(cont==3) {
+    document.getElementById("image").src ="Seizoenen\\herfst.jpg";   
+    } else {
+    document.getElementById("image").src ="Seizoenen\\zomer.jpg";
 
+    }
+    if(y>1){
+    document.getElementById('div').innerHTML="Er zijn "+y+" jaar voorbij";
+    }else{
+    document.getElementById('div').innerHTML="Er is "+y+" jaar voorbij";   
+    }
+
+    
 }
 </script>
 
 <body>
-<img id="image" src="C:\Users\Beheerder\Documents\Banen\WorkingTalent\Programmeren\Seizoenen\zomer.jpg" style="width:250px;">  <br>  
-<input type="button" onclick="pic()" value="Door de seizoenen" >
+<input type="button" onclick="pic()" value="Door de seizoenen" >  <br> 
+<img id="image" src="Seizoenen\\zomer.jpg" style="width:250px;">  
+
+<div id=div> 
+<p> Er is 0 jaar voorbij. </p>  
+</div>
 </body>
 </html>
