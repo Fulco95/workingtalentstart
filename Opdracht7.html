@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+</head>
+<script>
+var x=0;
+function pic(){
+    x++
+    var cont = x % 4;
+    if(cont==1){
+    document.getElementById("image").src ="Seizoenen\\lente.jpg";
+   }else if(cont==2){
+    document.getElementById("image").src ="Seizoenen\\winter.jpg";
+    } else if(cont==3) {
+    document.getElementById("image").src ="Seizoenen\\herfst.jpg";   
+    } else {
+    document.getElementById("image").src ="Seizoenen\\zomer.jpg";
+    }
+    
+}
+var x1=0;
+function pic1(){
+    x1++
+    var cont1 = x1 % 4;
+    if(cont1==1){
+    document.getElementById("image1").src ="Seizoenen\\lente.jpg";
+   }else if(cont1==2){
+    document.getElementById("image1").src ="Seizoenen\\winter.jpg";
+    } else if(cont1==3) {
+    document.getElementById("image1").src ="Seizoenen\\herfst.jpg";   
+    } else {
+    document.getElementById("image1").src ="Seizoenen\\zomer.jpg";
+    }   
+}
+function f(){
+    if(x1 % 4== x % 4){
+        console.log("HETZELFDE")   
+    }else{
+        console.log("NIET HETZELFDE")
+    }    
+}
+</script>
+
+<body>
+<input type="button" onclick="pic()" value="KNA" > 
+<input type="button" onclick="pic1()" value="KNB"> 
+<input type="button" onclick="f()" value="KNC" > 
+ <br> 
+<img id="image" src="Seizoenen\\zomer.jpg" style="width:250px;">  
+<img id="image1" src="Seizoenen\\zomer.jpg" style="width:250px;"> 
+
+<div id=div> 
+
+</div>
+</body>
+</html>
