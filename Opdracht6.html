@@ -11,23 +11,19 @@ function pic(){
     var cont = x % 4;
     if(cont==1){
     document.getElementById("image").src ="Seizoenen\\lente.jpg";
-   
-    }else if(cont==2){
+   }else if(cont==2){
     y++
     document.getElementById("image").src ="Seizoenen\\winter.jpg";
     } else if(cont==3) {
     document.getElementById("image").src ="Seizoenen\\herfst.jpg";   
     } else {
     document.getElementById("image").src ="Seizoenen\\zomer.jpg";
-
     }
     if(y>1){
     document.getElementById('div').innerHTML="Er zijn "+y+" jaar voorbij";
     }else{
     document.getElementById('div').innerHTML="Er is "+y+" jaar voorbij";   
     }
-
-    
 }
 </script>
 
