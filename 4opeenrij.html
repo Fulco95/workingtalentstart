@@ -10,6 +10,7 @@ td, th, tr {
   border: 3px solid red;
   
 }
+
 table.center{
     margin-left: 50px;
     margin-bottom: 50px;
@@ -20,90 +21,252 @@ table.center{
 </style>
 </head>
 <script>
+kleur = []
+naam = []
+var stap5 = ''
 function keuzes(){          //Niet af en werkt niet
-  var kleur1 = document.getElementById('kleur1').value
-  var  kleur2 = document.getElementById('kleur2').value
-  var naam1 = document.getElementById('naam1').value
-  var naam2 = document.getElementById('naam2').value
- 
-  
+    var kleur1 = document.getElementById('kleur1').value
+    var  kleur2 = document.getElementById('kleur2').value
+    var naam1 = document.getElementById('naam1').value
+    var naam2 = document.getElementById('naam2').value
+    kleur[1] = kleur1
+    kleur[0] = kleur2
+    naam[1] = naam1
+    naam[0] = naam2
+    stap5= kleur1
+    document.getElementById('naam1').remove()
+    document.getElementById('naam2').remove()
+    document.getElementById('kleur1').remove()
+    document.getElementById('kleur2').remove()
+    document.getElementById('knop').remove()
+    document.getElementById('text1').remove()
+    document.getElementById('text2').remove()
+    document.getElementById('div').innerHTML =  naam1+ " is aan de beurt"
+
 }
 var col = 0;
-var kleur = ['yellow','red']
-var stap5= 'red'
-function color(){ // Functie voor stap 5 en stap 5 gebruiken in alle functies voor rijen
-    var index = col % 2
-    stap5 = kleur[index]
-    col++
-   
-}
-
-
 var ca=0;
 function a(){
-    
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
+
     var array = ['a1','a2','a3','a4','a5','a6'];
 
     document.getElementById(array[ca]).style.background=stap5;
-    ca++
-    if(ca>2){
-        document.getElementById("AA").disabled.true;
+    if(ca>4){
+    document.getElementById('AA').onclick = null;
     }
+    col++
+    ca++
 }
 var cb=0;
 function b(){
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
     
     var array = ['b1','b2','b3','b4','b5','b6'];
 
     document.getElementById(array[cb]).style.background=stap5;
+    if(cb>4){
+    document.getElementById('BB').onclick = null;
+    }
+    col++
     cb++
 }
 var cc=0;
 function c(){
-    
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
+
     var array = ['c1','c2','c3','c4','c5','c6'];
 
     document.getElementById(array[cc]).style.background=stap5;
+    if(cc>4){
+    document.getElementById('CC').onclick = null;
+    }
+    col++
     cc++
 }
 var cd=0;
 function d(){
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
     
     var array = ['d1','d2','d3','d4','d5','d6'];
 
     document.getElementById(array[cd]).style.background=stap5;
+    if(cd>4){
+    document.getElementById('DD').onclick = null;
+    }
+    col++
     cd++
 }
 var ce=0;
 function e(){
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
     
     var array = ['e1','e2','e3','e4','e5','e6'];
 
     document.getElementById(array[ce]).style.background=stap5;
+    if(ce>4){
+    document.getElementById('EE').onclick = null;
+    }
+    col++
     ce++
 }
 var cf=0;
 function f(){
-
-    
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
     var array = ['f1','f2','f3','f4','f5','f6'];
 
     document.getElementById(array[cf]).style.background=stap5;
+    if(cf>4){
+    document.getElementById('FF').onclick = null;
+    }
     cf++
+    col++
 }
-cg=0;
+var cg=0;
 function g(){
+    var index = col % 2
+    stap5 = kleur[index]
+    document.getElementById('div').innerHTML =  naam[index]+ ' is aan de beurt'
+    var array = ['g1','g2','g3','g4','g5','g6'];
+   
+    document.getElementById(array[cg]).style.background=stap5;
+    if(cg>4){
+    document.getElementById('GG').onclick = null;
+    }
+    cg++
+    col++
+}
+
+function A(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['a1','a2','a3','a4','a5','a6'];
+
+    document.getElementById(array[ca]).style.background=stap5; 
     
+}
+
+function aa(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['a1','a2','a3','a4','a5','a6'];
+
+    document.getElementById(array[ca]).style.background="white";
+}
+function B(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['b1','b2','b3','b4','b5','b6'];
+
+    document.getElementById(array[cb]).style.background=stap5; 
+    
+}
+
+function bb(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['b1','b2','b3','b4','b5','b6'];
+
+    document.getElementById(array[cb]).style.background="white";
+}
+function C(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['c1','c2','c3','c4','c5','c6'];
+
+    document.getElementById(array[cc]).style.background=stap5; 
+    
+}
+
+function ccc(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['c1','c2','c3','c4','c5','c6'];
+
+    document.getElementById(array[cc]).style.background="white";
+}
+
+function D(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['d1','d2','d3','d4','d5','d6'];
+
+    document.getElementById(array[cd]).style.background=stap5; 
+    
+}
+
+function dd(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['d1','d2','d3','d4','d5','d6'];
+
+    document.getElementById(array[cd]).style.background="white";
+}
+function E(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['e1','e2','e3','e4','e5','e6'];
+
+    document.getElementById(array[ce]).style.background=stap5; 
+    
+}
+
+function ee(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['e1','e2','e3','e4','e5','e6'];
+
+    document.getElementById(array[ce]).style.background="white";
+}
+function F(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['f1','f2','f3','f4','f5','f6'];
+
+    document.getElementById(array[cf]).style.background=stap5; 
+    
+}
+
+function ff(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['f1','f2','f3','f4','f5','f6'];
+
+    document.getElementById(array[cf]).style.background="white";
+}
+function G(){
+    var index = col % 2
+    stap5 = kleur[index]
     var array = ['g1','g2','g3','g4','g5','g6'];
 
-    document.getElementById(array[cg]).style.background=stap5;
-    cg++
+    document.getElementById(array[cg]).style.background=stap5; 
+    
+}
+
+function gg(){
+    var index = col % 2
+    stap5 = kleur[index]
+    var array = ['g1','g2','g3','g4','g5','g6'];
+
+    document.getElementById(array[cg]).style.background="white";
 }
 </script>
 <body>
-    <table class="center" style="widows: 400px; ;" cellspacing="3" cellpadding='20' onclick="color()" >
+    <table id=table class="center" style="widows: 400px; ;" cellspacing="3" cellpadding='20'>
         
-        <tr id=GG onclick="g()">
+        <tr id=GG onclick="g()"  onmouseover="G()" onmouseout="gg()">
             <td id=g6> </td>
             <td id=g5></td>
             <td id=g4></td>
@@ -113,7 +276,7 @@ function g(){
            
             
         </tr>
-        <tr onclick="f()">
+        <tr id=FF onclick="f()"  onmouseover="F()" onmouseout="ff()">
             <td id=f6> </td>
             <td id=f5></td>
             <td id=f4></td>
@@ -123,7 +286,7 @@ function g(){
             
             
         </tr>
-        <tr onclick="e()">
+        <tr id=EE onclick="e()"  onmouseover="E()" onmouseout="ee()">
             <td id=e6> </td>
             <td id=e5></td>
             <td id=e4></td>
@@ -133,7 +296,7 @@ function g(){
             
             
         </tr>
-        <tr onclick="d()">
+        <tr id=DD onclick="d()"  onmouseover="D()" onmouseout="dd()">
             <td id=d6> </td>
             <td id=d5></td>
             <td id=d4></td>
@@ -143,7 +306,7 @@ function g(){
             
             
         </tr>
-        <tr onclick="c()">
+        <tr id=CC onclick="c()" onmouseover="C()" onmouseout="ccc()" >
             <td id=c6> </td>
             <td id=c5></td>
             <td id=c4></td>
@@ -153,7 +316,7 @@ function g(){
             
             
         </tr>
-        <tr onclick="b()">
+        <tr id=BB onclick="b()" onmouseover="B()" onmouseout="bb()" >
             <td id=b6> </td>
             <td id=b5></td>
             <td id=b4></td>
@@ -163,7 +326,7 @@ function g(){
             
             
         </tr>
-        <tr id=AA onclick="a()"  >
+        <tr id=AA onclick="a()" onmouseover="A()" onmouseout="aa()" >
             <td id=a6> </td>
             <td id=a5></td>
             <td id=a4></td>
@@ -175,13 +338,14 @@ function g(){
         </tr>
        
     </table> 
-    <h>Naam speler 1:</h>
+    <h id=text1>Naam speler 1:</h>
     <input type="text" id=naam1>
-    <input type="color" id=kleur1>
-    <h>Naam speler 2:</h>
+    <input type="color" id=kleur1> <br>
+    <h id=text2>Naam speler 2:</h>
     <input type="text" id=naam2> 
     <input type="color" id=kleur2> <br>
-    <input type="button" value="Volgende" onclick=keuzes()>
+    <input type="button" id=knop value="Volgende" onclick=keuzes()>
+    <div type=text id=div> 
 </body>
 
 </html>
