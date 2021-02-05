@@ -4,31 +4,36 @@
 <style>
 table{
     transform: rotate(90deg);
+    
 }
 td, th, tr {
   border: 3px solid red;
+  
 }
 
 table.center{
     margin-left: 50px;
     margin-bottom: 50px;
 }
+
+
+
 </style>
 </head>
 <script>
 kleur = []
 naam = []
 var stap5 = ''
-function keuzes(){          
+function keuzes(){          //Niet af en werkt niet
     var kleur1 = document.getElementById('kleur1').value
     var  kleur2 = document.getElementById('kleur2').value
     var naam1 = document.getElementById('naam1').value
     var naam2 = document.getElementById('naam2').value
-    kleur[1] = kleur1
-    kleur[0] = kleur2
+    kleur[0] = kleur1
+    kleur[1] = kleur2
     naam[1] = naam1
     naam[0] = naam2
-    stap5= kleur1
+    stap5= kleur2
     document.getElementById('naam1').remove()
     document.getElementById('naam2').remove()
     document.getElementById('kleur1').remove()
